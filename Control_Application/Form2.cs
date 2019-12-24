@@ -46,7 +46,7 @@ namespace Control_Application
             , string value_radius_2
             , string value_radius_3
             , string value_radius_4
-            //, string value_radius_5
+            , string value_radius_5
             //, string value_radius_6
             )
         {
@@ -54,7 +54,7 @@ namespace Control_Application
                     , int.Parse(value_radius_2)
                     , int.Parse(value_radius_3)
                     , int.Parse(value_radius_4)
-                    //, int.Parse(value_radius_5)
+                    , int.Parse(value_radius_5)
                     //, int.Parse(value_radius_6) 
             };
             return value_raduis;
@@ -77,7 +77,7 @@ namespace Control_Application
                 && int.TryParse(textBox2.Text, out int box2)
                 && int.TryParse(textBox4.Text, out int box3)
                 && int.TryParse(textBox3.Text, out int box4)
-                //&& int.TryParse(textBox5.Text, out int box5)
+                && int.TryParse(textBox5.Text, out int box5)
                 //&& int.TryParse(textBox6.Text, out int box6)
                 )
             {
@@ -87,14 +87,15 @@ namespace Control_Application
         }
 
         private bool checkValueRadius(int value_radius_1, int value_radius_2, int value_radius_3, int value_radius_4
-            //, int value_radius_5, int value_radius_6
+            , int value_radius_5
+            //, int value_radius_6
             )
         {
             if (value_radius_1 >= 0 && value_radius_1 <= 180
                     && value_radius_2 >= 0 && value_radius_2 <= 180
                     && value_radius_3 >= 0 && value_radius_3 <= 180
                     && value_radius_4 >= 0 && value_radius_4 <= 180
-                    //&& value_radius_5 >= 0 && value_radius_5 <= 180
+                    && value_radius_5 >= 0 && value_radius_5 <= 180
                     //&& value_radius_6 >= 0 && value_radius_6 <= 180
                     )
             {
@@ -132,7 +133,7 @@ namespace Control_Application
                     , item[i].SubItems[2].Text
                     , item[i].SubItems[3].Text
                     , item[i].SubItems[4].Text
-                    //, item[i].SubItems[5].Text
+                    , item[i].SubItems[5].Text
                     //, item[i].SubItems[6].Text
                     );
                     list_value_raduis.Add(value_raduis);
@@ -162,7 +163,7 @@ namespace Control_Application
 
                     //    for (int j = 0; j < list_value_raduis[i].Length; j++)
                     //    {
-                    //        MessageBox.Show(list_value_raduis[i][j] + j+
+                    //        MessageBox.Show(list_value_raduis[i][j] + j +
 
                     //    "");
                     //    }
@@ -185,11 +186,12 @@ namespace Control_Application
                 int value_radius_2 = int.Parse(textBox2.Text);
                 int value_radius_3 = int.Parse(textBox3.Text);
                 int value_radius_4 = int.Parse(textBox4.Text);
-                //int value_radius_5 = int.Parse(textBox5.Text);
+                int value_radius_5 = int.Parse(textBox5.Text);
                 //int value_radius_6 = int.Parse(textBox6.Text);
 
                 if (checkValueRadius(value_radius_1, value_radius_2, value_radius_3, value_radius_4
-                    //, value_radius_5, value_radius_6
+                    , value_radius_5
+                    //, value_radius_6
                     ))
                 {
                     ListViewItem item = new ListViewItem();
@@ -199,7 +201,7 @@ namespace Control_Application
                     item.SubItems.Add(value_radius_2 + "");
                     item.SubItems.Add(value_radius_3 + "");
                     item.SubItems.Add(value_radius_4 + "");
-                    //item.SubItems.Add(value_radius_5 + "");
+                    item.SubItems.Add(value_radius_5 + "");
                     //item.SubItems.Add(value_radius_6 + "");
                     listViewRadius.Items.Add(item);
                     clearTextBox();
