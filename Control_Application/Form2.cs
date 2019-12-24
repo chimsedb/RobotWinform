@@ -148,6 +148,7 @@ namespace Control_Application
                 }
                 else
                 {
+                    //testing
                     //for (int i = 0; i < list_value_raduis.Count; i++)
                     //{
                     //    list_value_raduis.ToArray().GetValue(0);
