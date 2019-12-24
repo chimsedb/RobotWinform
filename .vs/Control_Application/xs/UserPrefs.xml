@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{D1DF838C-FCF6-4854-82FE-37F464AD2A19}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Control_Application/Form1.cs">
+    <Files>
+      <File FileName="Control_Application/Form1.cs" Line="29" Column="32" />
+      <File FileName="Control_Application/Form1.Designer.cs" />
+      <File FileName="Control_Application/Form1.resx" />
+      <File FileName="Control_Application/Program.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Control_Application" expanded="True">
+            <Node name="Control_Application" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Form1.cs" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Control__Application PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

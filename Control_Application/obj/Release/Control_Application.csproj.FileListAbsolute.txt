@@ -1,0 +1,8 @@
+/Users/tranhauhieu/Desktop/PC_Servo_Multi/Control_Application/Control_Application/bin/Release/Control_Application.exe.config
+/Users/tranhauhieu/Desktop/PC_Servo_Multi/Control_Application/Control_Application/bin/Release/Control_Application.exe
+/Users/tranhauhieu/Desktop/PC_Servo_Multi/Control_Application/Control_Application/bin/Release/Control_Application.pdb
+/Users/tranhauhieu/Desktop/PC_Servo_Multi/Control_Application/Control_Application/obj/Release/Control_Application.Form1.resources
+/Users/tranhauhieu/Desktop/PC_Servo_Multi/Control_Application/Control_Application/obj/Release/Control_Application.Properties.Resources.resources
+/Users/tranhauhieu/Desktop/PC_Servo_Multi/Control_Application/Control_Application/obj/Release/Control_Application.csproj.GenerateResource.cache
+/Users/tranhauhieu/Desktop/PC_Servo_Multi/Control_Application/Control_Application/obj/Release/Control_Application.exe
+/Users/tranhauhieu/Desktop/PC_Servo_Multi/Control_Application/Control_Application/obj/Release/Control_Application.pdb
