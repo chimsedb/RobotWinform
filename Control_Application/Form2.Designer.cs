@@ -42,14 +42,20 @@ namespace Control_Application
             this.button_run = new System.Windows.Forms.Button();
             this.listViewRadius = new System.Windows.Forms.ListView();
             this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Radius1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Radius2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Radius3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Radius4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.labelDescription = new System.Windows.Forms.Label();
-            this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.button_remove = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Raduis5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Raduis6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button_loop = new System.Windows.Forms.Button();
+            this.textBoxLoop = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +79,7 @@ namespace Control_Application
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(300, 73);
+            this.label3.Location = new System.Drawing.Point(255, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 2;
@@ -82,7 +88,7 @@ namespace Control_Application
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(300, 115);
+            this.label4.Location = new System.Drawing.Point(255, 112);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 3;
@@ -104,21 +110,21 @@ namespace Control_Application
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(361, 112);
+            this.textBox4.Location = new System.Drawing.Point(325, 112);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 6;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(361, 70);
+            this.textBox3.Location = new System.Drawing.Point(325, 66);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 7;
             // 
             // button_save
             // 
-            this.button_save.Location = new System.Drawing.Point(233, 148);
+            this.button_save.Location = new System.Drawing.Point(303, 151);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(95, 37);
             this.button_save.TabIndex = 8;
@@ -128,7 +134,7 @@ namespace Control_Application
             // 
             // button_run
             // 
-            this.button_run.Location = new System.Drawing.Point(541, 467);
+            this.button_run.Location = new System.Drawing.Point(569, 467);
             this.button_run.Name = "button_run";
             this.button_run.Size = new System.Drawing.Size(95, 37);
             this.button_run.TabIndex = 9;
@@ -140,11 +146,12 @@ namespace Control_Application
             // 
             this.listViewRadius.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ID,
-            this.Description,
             this.Radius1,
             this.Radius2,
             this.Radius3,
-            this.Radius4});
+            this.Radius4,
+            this.Raduis5,
+            this.Raduis6});
             this.listViewRadius.FullRowSelect = true;
             this.listViewRadius.HideSelection = false;
             this.listViewRadius.Location = new System.Drawing.Point(31, 203);
@@ -158,11 +165,7 @@ namespace Control_Application
             // ID
             // 
             this.ID.Text = "ID";
-            // 
-            // Description
-            // 
-            this.Description.Text = "Description";
-            this.Description.Width = 170;
+            this.ID.Width = 40;
             // 
             // Radius1
             // 
@@ -186,23 +189,16 @@ namespace Control_Application
             // 
             // labelDescription
             // 
-            this.labelDescription.AutoSize = true;
-            this.labelDescription.Location = new System.Drawing.Point(128, 25);
+            this.labelDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDescription.Location = new System.Drawing.Point(300, 20);
             this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(66, 13);
+            this.labelDescription.Size = new System.Drawing.Size(150, 20);
             this.labelDescription.TabIndex = 11;
-            this.labelDescription.Text = "Description :";
-            // 
-            // textBoxDescription
-            // 
-            this.textBoxDescription.Location = new System.Drawing.Point(200, 22);
-            this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.Size = new System.Drawing.Size(213, 20);
-            this.textBoxDescription.TabIndex = 12;
+            this.labelDescription.Text = "Form Input Radius";
             // 
             // button_remove
             // 
-            this.button_remove.Location = new System.Drawing.Point(414, 467);
+            this.button_remove.Location = new System.Drawing.Point(440, 467);
             this.button_remove.Name = "button_remove";
             this.button_remove.Size = new System.Drawing.Size(95, 37);
             this.button_remove.TabIndex = 13;
@@ -210,11 +206,76 @@ namespace Control_Application
             this.button_remove.UseVisualStyleBackColor = true;
             this.button_remove.Click += new System.EventHandler(this.btn_remove_click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(480, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Radius 5 :";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(541, 66);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(480, 119);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Radius  6 :";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(541, 115);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 17;
+            // 
+            // Raduis5
+            // 
+            this.Raduis5.Text = "Value Raduis5";
+            this.Raduis5.Width = 100;
+            // 
+            // Raduis6
+            // 
+            this.Raduis6.Text = "Value Raduis6";
+            this.Raduis6.Width = 100;
+            // 
+            // button_loop
+            // 
+            this.button_loop.Location = new System.Drawing.Point(164, 467);
+            this.button_loop.Name = "button_loop";
+            this.button_loop.Size = new System.Drawing.Size(95, 37);
+            this.button_loop.TabIndex = 18;
+            this.button_loop.Text = "Loop";
+            this.button_loop.UseVisualStyleBackColor = true;
+            this.button_loop.Click += new System.EventHandler(this.loop_click);
+            // 
+            // textBoxLoop
+            // 
+            this.textBoxLoop.Location = new System.Drawing.Point(40, 476);
+            this.textBoxLoop.Name = "textBoxLoop";
+            this.textBoxLoop.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLoop.TabIndex = 19;
+            // 
             // Form2
             // 
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(694, 516);
+            this.Controls.Add(this.textBoxLoop);
+            this.Controls.Add(this.button_loop);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button_remove);
-            this.Controls.Add(this.textBoxDescription);
             this.Controls.Add(this.labelDescription);
             this.Controls.Add(this.listViewRadius);
             this.Controls.Add(this.button_run);
@@ -228,7 +289,6 @@ namespace Control_Application
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
-           
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,14 +308,20 @@ namespace Control_Application
         private System.Windows.Forms.Button button_run;
         private System.Windows.Forms.ListView listViewRadius;
         private System.Windows.Forms.ColumnHeader ID;
-        private System.Windows.Forms.ColumnHeader Description;
         private System.Windows.Forms.ColumnHeader Radius1;
         private System.Windows.Forms.ColumnHeader Radius2;
         private System.Windows.Forms.ColumnHeader Radius3;
         private System.Windows.Forms.ColumnHeader Radius4;
         private System.Windows.Forms.Label labelDescription;
-        private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Button button_remove;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.ColumnHeader Raduis5;
+        private System.Windows.Forms.ColumnHeader Raduis6;
+        private System.Windows.Forms.Button button_loop;
+        private System.Windows.Forms.TextBox textBoxLoop;
     }
 
    
