@@ -148,7 +148,7 @@ namespace Control_Application
 
                         for (int j = 0; j < list_value_raduis[i].Length; j++)
                         {
-                            SendServoInfo(i, list_value_raduis[i][j]);
+                            SendServoInfo(j, list_value_raduis[i][j]);
                             Thread.Sleep(500);
                         }
                     }
@@ -156,17 +156,17 @@ namespace Control_Application
                 else
                 {
                     //testing
-                    for (int i = 0; i < list_value_raduis.Count; i++)
-                    {
-                        list_value_raduis.ToArray().GetValue(0);
+                    //for (int i = 0; i < list_value_raduis.Count; i++)
+                    //{
+                    //    list_value_raduis.ToArray().GetValue(0);
 
-                        for (int j = 0; j < list_value_raduis[i].Length; j++)
-                        {
-                            MessageBox.Show(list_value_raduis[i][j] +
+                    //    for (int j = 0; j < list_value_raduis[i].Length; j++)
+                    //    {
+                    //        MessageBox.Show(list_value_raduis[i][j] + j+
 
-                        "");
-                        }
-                    }
+                    //    "");
+                    //    }
+                    //}
 
                 }
 
